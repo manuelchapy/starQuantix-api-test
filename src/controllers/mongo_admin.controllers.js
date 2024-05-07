@@ -8,7 +8,7 @@ const dbMongoFunctionsUser = require("../functions/db_mongo_functions_user")
  }
 
  mongoAdmonCtrl.addUser = async(req, res) =>{
-    console.log(req.body)
+    console.log("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!", req.body)
     const respUser = await dbMongoFunctionsUser.addUser(req.body.data);
     res.send(respUser)
  }

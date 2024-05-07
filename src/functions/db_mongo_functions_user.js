@@ -12,7 +12,8 @@ dbMongoFunctionsUser.addUser = async (user) => {
         try {
             userAdding.save();
             resolve("1")
-        } catch (error) {
+        } catch{
+            console.log("/////////////////////////////", error)
             resolve("0")
         }
     })
